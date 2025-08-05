@@ -1,3 +1,10 @@
+location of new dataset, use:
+
+```
+wget https://web.corral.tacc.utexas.edu/arctos/data/filtered_flat.csv.gz
+```
+
+
 Index Fields
 ```
 field,indexed,type
