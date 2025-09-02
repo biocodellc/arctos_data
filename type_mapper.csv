@@ -1,0 +1,13 @@
+field,type,type
+country,biological,keyword
+state,biological,keyword
+genus,biological,keyword
+family,biological,keyword
+year,biological,
+country,geological,keyword
+formation,geological,keyword
+color,geological,
+,geological,
+,geological,
+country,cultural,keyword
+,cultural,keyword
