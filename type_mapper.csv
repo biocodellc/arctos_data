@@ -1,4 +1,4 @@
-field,type,type
+field,type,index_type
 country,biological,keyword
 state,biological,keyword
 genus,biological,keyword
