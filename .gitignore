@@ -1,1 +1,6 @@
-data/arctos.csv
+/data
+.env
+.env.*
+__pycache__/
+*.py[cod]
+/lupinus_import/

@@ -111,7 +111,11 @@ def transform_row(row: dict, type_map: dict) -> dict:
                 doc[field] = value
     # derive 'type' from guid_prefix via lookup (fallback to guid_prefix if unmapped)
     gp = doc.get("guid_prefix", "")
-    doc["type"] = type_map.get(gp, gp)
+    # NEW (only set type when the lookup defines it)
+    mapped = type_map.get(gp)
+    if mapped:               # truthy string from the lookup
+        doc["type"] = mapped # else: leave 'type' unset
+
     return doc
 
 def preview_file(csv_path: str, type_map: dict, max_preview: int = 5) -> dict:
